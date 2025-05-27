@@ -9,4 +9,5 @@ function findColor(hash) {
     return COLORS.find(x => toHex(sha256(utf8ToBytes(x))) === toHex(hash));
 }
 
+
 module.exports = findColor;
